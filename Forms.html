@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+        <title>Forms</title>
+        <!--Styling the label tag-->
+
+        <style>
+            label {
+                font-weight: bold;
+                font-size: xx-large;
+            }
+            input {
+                border-radius: 15rem;
+                border-width: 1mm;
+                line-height: 3rem;
+                width: 15rem;
+            }
+        </style>
+    </head>
+    <body>
+        <!--Creating a form with action specified as "process.php" which is for sample-->
+        <div>
+            <form action="process.php">
+                <label for="mobile"> Mobile </label> <br />
+                <input
+                    type="text"
+                    name="mobile"
+                    id="mobile" />
+                <br />
+                <label for="password"> Password</label> <br />
+                <input
+                    type="password"
+                    name="password"
+                    id="password" />
+            </form>
+        </div>
+    </body>
+</html>
