@@ -7,6 +7,13 @@
             content="width=device-width, initial-scale=1.0" />
         <title>Basic essential tags</title>
         <style>
+            a:hover {
+                color: red;
+            }
+            .first::first-letter {
+                font-size: xx-large;
+                font-weight: bolder;
+            }
             h4 {
                 color: blue;
             }
@@ -15,6 +22,10 @@
                 font-family: "Times New Roman", Times, serif;
             }
             dd {
+                font-style: italic;
+            }
+            dd::first-letter {
+                font-size: large;
                 font-style: italic;
             }
 
@@ -41,7 +52,7 @@
 
         <!--Semantic tags in a paragraph-->
 
-        <p>
+        <p class="first">
             Lorem ipsum <strong>dolor</strong> sit amet consectetur adipisicing
             elit. Eaque est, ullam accusamus <em>voluptatum</em> magni veniam
             commodi, ut vel suscipit nihil cumque libero in, aliquid harum!
