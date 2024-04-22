@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            /*CSS hover for navigation*/
+            #welcome:hover {
+                color: red;
+            }
+
+            /* Background and foreground colours */
+            .wrapperA {
+                background-color: lightgrey;
+                color: red;
+            }
+
+            /* Font weight, style, stretch, typefaces */
+            .wrapperB {
+                background-color: lightgrey;
+                font-weight: bolder;
+                font-stretch: normal;
+                font-style: normal;
+            }
+
+            /* Font sizes */
+            .wrapperC {
+                background-color: lightgrey;
+                color: blue;
+            }
+
+            /* Text Transformation */
+            .wrapperD {
+                font-size: x-large;
+                background-color: lightgrey;
+                color: rgb(135, 80, 207);
+            }
+
+            /* Text Decoration & Sample for multiple decoration*/
+            .wrapperE {
+                font-size: x-large;
+                background-color: lightgrey;
+                color: rgb(89, 139, 245);
+            }
+            #multiple-text-decoration {
+                text-decoration: overline underline line-through;
+            }
+
+            /* Text Alignment and Leading(Line height) */
+            .wrapperF {
+                font-size: x-large;
+                background-color: lightgrey;
+                color: rgb(135, 80, 207);
+                list-style-type: none;
+            }
+            #leading-justified{
+                text-align: justify;
+                line-height: 9rem;
+            }
+
+
+            
+            #wrapperG {
+                border-style: solid;
+                border-color: red;
+                padding: 1.5rem;
+            }
+            #padding-margin {
+                border-style: solid;
+                border-color: blue;
+                padding: 15px 25%;
+            }
+            p {
+                border-style: solid;
+                border-color: blue;
+                padding: 15px 35px;
+            }
+            span {
+                border-style: solid;
+                border-color: rgb(0, 0, 0);
+                padding: 1.5px 1.5px;
+            }
+        </style>
+    </head>
+    <body>
+        <!--Code for navigating to the previous page-->
+
+        <div>
+            <h4>
+                <a
+                    id="welcome"
+                    href="index.html"
+                    >&larr; Back to Welcome</a
+                >
+            </h4>
+        </div>
+        <!--There are two different kinds of color application-->
+
+        <div class="wrapperA">
+            <h1>Colours</h1>
+            <ol>
+                <li>Text color</li>
+            </ol>
+        </div>
+        <!--Typefaces and their attributes like 
+         * weight
+         * style
+         * stretch-->
+
+        <div class="wrapperB">
+            <h1>Typefaces</h1>
+            <ul>
+                <li style="font-family: serif">serif</li>
+                <li style="font-family: sans-serif">Sans serif</li>
+                <li style="font-family: monospace">monospace</li>
+                <li style="font-family: cursive">Handwriting</li>
+                <li style="font-family: fantasy">Display</li>
+            </ul>
+        </div>
+        <!-- Font sizes -->
+
+        <div class="wrapperC">
+            <h1>Font sizes</h1>
+            <ul>
+                <li style="font-size: 35px">Sample</li>
+                <li style="font-size: 150%">Sample</li>
+                <li style="font-size: 1em">Sample</li>
+                <li style="font-size: 3.5rem">Sample</li>
+                <!-- REM - RootEM which is used because it overcomes the disadvantage of
+                em as it calculates the size relative to the prrevious parent tag sizes while
+                the REM calculates from the primary tag sizes respectively -->
+            </ul>
+        </div>
+        <!-- Text Transformation -->
+
+        <div class="wrapperD">
+            <h1>Text Transformation</h1>
+            <ul>
+                <li style="text-transform: none">Sample capitalize</li>
+                <li style="text-transform: lowercase">Sample</li>
+                <li style="text-transform: uppercase">Sample</li>
+                <li style="text-transform: capitalize">Sample capitalize</li>
+            </ul>
+        </div>
+        <!-- Text Decoration -->
+
+        <div class="wrapperE">
+            <h1>Text Decoration</h1>
+            <ul>
+                <li style="text-decoration: none">Sample</li>
+                <li style="text-decoration: underline">Sample</li>
+                <li style="text-decoration: line-through">Sample</li>
+                <li style="text-decoration: overline">Sample</li>
+                <!--multiple text decoration for a single sentence-->
+                <li id="multiple-text-decoration">Sample for multiple</li>
+            </ul>
+        </div>
+        <!-- Text Alignment and Leading(Line height) -->
+
+        <div class="wrapperF">
+            <h1>Text Alignment &amp; Leading</h1>
+            <ul class="wrapperF">
+                <li style="text-align: left">Sample</li>
+                <li style="text-align: right">Sample</li>
+                <li style="text-align: center">Sample</li>
+            </ul>
+            <p id="leading-justified">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Eveniet quis fugit vitae quaerat at laborum commodi quisquam?
+                Cumque blanditiis pariatur consequuntur quos, ipsam animi
+                quisquam dignissimos fugiat non, tenetur assumenda.
+            </p>
+        </div>
+        <div class="wrapperG">
+            <h1 id="padding-margin">CSS in HTML</h1>
+            <p>
+                <span> Lorem </span>ipsum dolor sit amet consectetur adipisicing
+                elit. Voluptas consectetur ab laboriosam magni eaque voluptate
+                expedita aperiam facere autem, similique sapiente magnam tempora
+                libero ut fugit soluta fugiat iure voluptatibus.
+            </p>
+        </div>
+    </body>
+</html>
