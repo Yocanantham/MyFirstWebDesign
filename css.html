@@ -49,7 +49,7 @@
                 text-decoration: overline underline line-through;
             }
 
-            /* Text Alignment and Leading(Line height) */
+            /* Text Alignment and Leading(Line height) and Kerning(Line spacing) */
             .wrapperF {
                 font-size: x-large;
                 background-color: lightgrey;
@@ -64,21 +64,63 @@
                 border-color: blue;
             }
 
-            /* Padding and Margin */
+            /* Text Indent and Pseudo elements */
             .wrapperG {
+                background-color: lightgray;
                 border-style: solid;
                 border-color: red;
                 padding: 1.5rem;
             }
-            .padding-margin {
+            #first-letter::first-letter {
+                font-size: larger;
+                font-weight: bolder;
+                color: blue;
+            }
+            #first-line::first-line {
+                font-size: larger;
+                font-weight: bolder;
+                color: blue;
+            }
+
+            /* Pseudo classes 
+                * link ---> Link is noting but a anchor representation
+                  a{
+                    style
+                  }
+
+                     OR
+
+                   a:link{
+                    style
+                   }
+                * hover ---> Hover is used for hovering
+                * visited ---> Visited links 
+                * active ---> Active state is when we click a link and 
+                              we still not release the mouse button then
+                              it is an active stated
+                              
+                * focus ---> Focus is nothing but when we focus the content 
+                             using the TAB button it is focussed for the 
+                             link selection in a webpage */
+            .wrapperH {
+                background-color: lightgray;
                 border-style: solid;
                 border-color: blue;
-                padding: 35px;
             }
-            span {
-                border-style: solid;
-                border-color: rgb(0, 0, 0);
-                padding: 1.5px 1.5px;
+            .testing:link {
+                color: rgb(109, 158, 241);
+            }
+            .testing:focus {
+                color: rgb(0, 122, 47);
+            }
+            .testing:hover {
+                color: red;
+            }
+            .testing:visited {
+                color: black;
+            }
+            .testing:active {
+                color: darkblue;
             }
         </style>
     </head>
@@ -155,7 +197,7 @@
                 <li id="multiple-text-decoration">Sample for multiple</li>
             </ul>
         </div>
-        <!-- Text Alignment and Leading(Line height) -->
+        <!-- Text Alignment and Leading(Line height) and Kerning(Line spacing) -->
 
         <div class="wrapperF">
             <h1>Text Alignment &amp; Leading</h1>
@@ -164,6 +206,7 @@
                 <li style="text-align: right">Sample</li>
                 <li style="text-align: center">Sample</li>
             </ul>
+            <h4>Leading</h4>
             <p id="leading-justified">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Necessitatibus aut dicta perspiciatis nisi et autem nobis
@@ -184,10 +227,112 @@
                 Officia cum ipsa nam quis, vel tempore maxime nesciunt, quidem
                 rerum sit veritatis ipsum cupiditate dolore suscipit.
             </p>
+            <h4>Kerning</h4>
+            <p id="kerning">It is used for letter and word spacing</p>
+            <ul>
+                <li>letter-spacing</li>
+                <li>word-spacing</li>
+            </ul>
+        </div>
+        <!-- Text Indent and Pseudo elements -->
+
+        <div class="wrapperG">
+            <h4>Text Indent</h4>
+            <p id="text indent">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. A
+                dolores tempore praesentium iste? Repellendus porro sed fugit
+                iusto sequi harum quidem molestias dolorum nobis ad. Similique
+                quis voluptatem quasi ex!
+            </p>
+            <h4>First letter</h4>
+            <p id="first-letter">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                ullam iusto ipsum laboriosam inventore! Distinctio, voluptates
+                sed? Odio doloribus consequatur iusto maxime explicabo vel omnis
+                quasi, perspiciatis accusantium corporis molestiae?
+            </p>
+            <h4>First line</h4>
+            <p id="first-line">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam
+                ratione fugiat expedita quibusdam officiis corporis
+                perspiciatis. Necessitatibus, natus a voluptate quas quo, dolor
+                magnam eaque tenetur beatae sit cum eligendi.
+            </p>
+        </div>
+        <!-- Pseudo classes 
+        * link
+        * hover
+        * visited
+        * active
+        * focus -->
+
+        <div class="wrapperH">
+            <h4>
+                <a
+                    class="testing"
+                    href="#wrapperH"
+                    >Test Link</a
+                >
+            </h4>
+            <p>
+                <span
+                    ><a
+                        class="testing"
+                        href="https://www.google.com/"
+                        >Google</a
+                    ></span
+                >
+                LLC is an American multinational corporation and technology
+                company focusing on online advertising, search engine
+                technology, cloud computing, computer software, quantum
+                computing, e-commerce, consumer electronics, and artificial
+                intelligence.
+            </p>
+            <p>
+                <span
+                    ><a
+                        class="testing"
+                        href="https://www.youtube.com/"
+                        >YouTube</a
+                    ></span
+                >
+                is an American online video sharing and social media platform
+                owned by Google. Accessible worldwide, it was launched on
+                February 14, 2005, by Steve Chen, Chad Hurley, and Jawed Karim,
+                three former employees of PayPal.
+            </p>
+            <p>
+                <span
+                    ><a
+                        class="testing"
+                        href="https://mail.google.com/mail/u/0/"
+                        >Gmail</a
+                    ></span
+                >
+                is an email service provided by Google. As of 2019, it had 1.5
+                billion active users worldwide, making it the largest email
+                service in the world. It also provides a webmail interface,
+                accessible through a web browser, and is also accessible through
+                the official mobile application.
+            </p>
+            <p>
+                <span
+                    ><a
+                        class="testing"
+                        href="https://maps.google.com/"
+                        >Google Maps</a
+                    ></span
+                >
+                is a web mapping platform and consumer application offered by
+                Google. It offers satellite imagery, aerial photography, street
+                maps, 360° interactive panoramic views of streets, real-time
+                traffic conditions, and route planning for traveling by foot,
+                car, bike, air and public transportation.
+            </p>
         </div>
         <!-- Padding and Margin -->
 
-        <div class="wrapperG">
+        <div class="wrapper">
             <h1 class="padding-margin">CSS in HTML</h1>
             <p class="padding-margin">
                 <span> Lorem </span>ipsum dolor sit amet consectetur adipisicing
