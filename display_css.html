@@ -21,16 +21,16 @@
             a {
                 text-decoration: none;
             }
-            li:hover {
+            .display-list:hover {
                 background-color: red;
             }
 
             /* It is used for dispalying thr drop down menu */
-            ul {
+            #display-list {
                 list-style-type: none;
                 background-color: grey;
             }
-            li {
+            .display-list {
                 display: inline-block;
                 height: 65px;
                 line-height: 65px;
@@ -115,6 +115,7 @@
                 margin: 0 auto;
                 width: 750px;
                 padding: 15px;
+                margin-bottom: 15px;
             }
             #entire-background {
                 border-style: solid;
@@ -151,6 +152,19 @@
                 background-image: url("sample-background-small.jpg");
                 background-repeat: no-repeat;
             }
+
+             /* Custom list sytle in css */
+             .wrapperD {
+                font-size: large;
+                border-style: solid;
+                border-color: blue;
+                margin: 0 auto;
+                width: 750px;
+                padding: 15px;
+             }
+             #custom-style {
+                
+             }
         </style>
     </head>
     <body>
@@ -159,12 +173,12 @@
             <h1 style="text-align: center">
                 Display and Visibility properties
             </h1>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li id="coming-soon-display"><a href="#">Courses</a></li>
-                <li id="coming-soon-visibility"><a href="#">Courses</a></li>
-                <li><a href="#">Contact</a></li>
+            <ul id="display-list">
+                <li class="display-list"><a href="#">Home</a></li>
+                <li class="display-list"><a href="#">About</a></li>
+                <li class="display-list" id="coming-soon-display"><a href="#">Courses</a></li>
+                <li class="display-list" id="coming-soon-visibility"><a href="#">Courses</a></li>
+                <li class="display-list"><a href="#">Contact</a></li>
             </ul>
         </div>
         <!-- Box shadows and Border radius -->
@@ -221,8 +235,25 @@
 
             <!--  * background-position : there are 9 positions in css.
                   * background-attachment : fixed (or) scroll in css.
-            
+                  
+
+                [shorthand] -> background : (color) (image) (repeat) (position) (attachment)
+
+
+                               # position may be defined as {top left} or using the 
+                               distance terms like " 0px 100px "" where first 
+                               is 'x-axis' and later is 'y-axis'.
             -->
+        </div>
+
+        <!-- Custom list style -->
+        <div class="wrapperD">
+            <h4>Custom list style in css</h4>
+            <ul id="custom-style">
+                <li class="custom-style">HTML</li>
+                <li class="custom-style">CSS</li>
+                <li class="custom-style">JavaScript</li>
+            </ul>
         </div>
     </body>
 </html>
