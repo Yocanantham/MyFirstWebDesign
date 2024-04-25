@@ -5,7 +5,7 @@
         <meta
             name="viewport"
             content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>CSS</title>
         <style>
             /*CSS hover for navigation*/
             #welcome:hover {
@@ -70,6 +70,7 @@
                 border-style: solid;
                 border-color: red;
                 padding: 1.5rem;
+                margin-bottom: 1.5rem;
             }
             #first-letter::first-letter {
                 font-size: larger;
@@ -105,7 +106,8 @@
             .wrapperH {
                 background-color: lightgray;
                 border-style: solid;
-                border-color: blue;
+                border-color: red;
+                margin-bottom: 1.5rem;
             }
             .testing:link {
                 color: rgb(109, 158, 241);
@@ -121,6 +123,97 @@
             }
             .testing:active {
                 color: darkblue;
+            }
+
+            /* Shadow properties 
+            text-shadow : (a) (b) (c) (d)
+            * a ---> left and right {[-] for left}
+            * b ---> top  nad bottom {[-] for top}
+            * c ---> for blurring effects 
+            * d ---> color of the shadow */
+            .wrapperI {
+                border-style: solid;
+                border-color: blue;
+                padding: 1rem;
+                font-size: xx-large;
+                margin-bottom: 1.5rem;
+            }
+
+            #left-shadow {
+                text-shadow: -5px 0 0 rgb(255, 0, 0);
+            }
+            #right-shadow {
+                text-shadow: 5px 0 0 rgb(255, 0, 0);
+            }
+            #top-shadow {
+                text-shadow: 0 -5px 0 rgb(255, 0, 0);
+            }
+            #bottom-shadow {
+                text-shadow: 0 5px 0 rgb(255, 0, 0);
+            }
+            #shadow-blurring {
+                text-shadow: 5px 0 5px rgb(0, 0, 255);
+            }
+            #real-shadow {
+                text-shadow: 5px 5px 5px rgb(128, 128, 128);
+            }
+
+            /* Height and Width 
+            
+            # WIDTH : 
+
+            1) min-width : It is used for describing the min width of the page
+            even though the viewer tries to disaply it in a smaller width than
+            it is mentioned.
+
+            2) width : It is used for the describing the width of the page to 
+            be displayed in a given amount of the default viewport size for the
+            webpage. (between min and maximum specified width)
+
+            3) max-width : It is used for describing the maximum width the
+            page should be displayed even when the viewport size is maximum
+            than the page.
+
+            # HEIGHT : 
+                 Height basically depends on the content and it is advised to use
+                 the property to make a standard size for logo and other needed 
+                 tags in a webpage
+            
+            1) min-height : The effect is executed for the mentioned minimum
+            height and it also increses the effect according to the size of the
+            content. 
+
+            2) height : The size will never increase even content is increased.
+
+            3) max-height : The effect will applied to the content for the 
+            mentioned size and it will never increse even the size of the
+            content is increased.
+            
+            
+            */
+            .wrapperJ {
+                border-style: solid;
+                border-color: blue;
+                padding: 1rem;
+                font-size: xx-large;
+                text-align: justify;
+            }
+            .wrapperJ-width {
+                background-color: lightgrey;
+                border-style: solid;
+                border-color: black;
+                padding: 1rem;
+                margin-bottom: 1.5rem;
+                min-width: 450px;
+                width: 95%;
+                max-width: 950px;
+            }
+            .wrapperJ-height {
+                background-color: lightgrey;
+                border-style: solid;
+                border-color: black;
+                padding: 1rem;
+                min-height: 500px;
             }
         </style>
     </head>
@@ -330,6 +423,86 @@
                 car, bike, air and public transportation.
             </p>
         </div>
+        <!--Shadow properties-->
+
+        <div class="wrapperI">
+            <h1 id="real-shadow">Shadow</h1>
+            <h4 id="left-shadow">Sample</h4>
+            <h4 id="right-shadow">Sample</h4>
+            <h4 id="top-shadow">Sample</h4>
+            <h4 id="bottom-shadow">Sample</h4>
+            <h4 id="shadow-blurring">Sample</h4>
+        </div>
+        <!-- Height and Width -->
+
+        <div class="wrapperJ">
+            <div class="wrapperJ-width">
+                <h1>width</h1>
+                <br />
+                <img
+                    style="font-size: small"
+                    src="sample.jpg"
+                    alt="Vinayagar"
+                    width="450px" />
+                <p>
+                    <span> Lorem </span>ipsum dolor sit amet consectetur
+                    adipisicing elit. Voluptas consectetur ab laboriosam magni
+                    eaque voluptate expedita aperiam facere autem, similique
+                    sapiente magnam tempora libero ut fugit soluta fugiat iure
+                    voluptatibus.
+                </p>
+            </div>
+            <div class="wrapperJ-height">
+                <h1>Height</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Autem eaque, dolor nam obcaecati, a voluptatum corrupti
+                    officiis consequuntur aut, ad atque laboriosam iure
+                    dignissimos. Inventore, eius mollitia! Non, voluptatum?
+                    Dolor incidunt, qui aspernatur nulla cupiditate laudantium,
+                    minima ullam, suscipit quis placeat veniam itaque totam
+                    rerum tenetur reiciendis. Omnis, reprehenderit dolor tempora
+                    iusto error amet, incidunt doloribus voluptatem libero nulla
+                    quas cumque ipsum corrupti aliquid qui consectetur dolore
+                    laudantium rem. Officiis, doloribus! Fugit, id! Provident
+                    voluptatibus maxime dolorum nemo corrupti hic magni beatae
+                    non quasi placeat distinctio amet sint minima deserunt
+                    similique excepturi voluptatum, earum assumenda possimus ad.
+                    Optio, dolores expedita.
+                </p>
+            </div>
+        </div>
+        <!--Border property can be defined in 3 
+        * border-width
+        * border-style
+        * border-colour
+            
+            OR
+        
+        border : (a) (b) (c)
+
+        # a - border-width
+        # b - border-style
+        # c - border-color
+
+
+        * By using the top,bottom,right,left we can change
+        the width, style and color of each side in a different
+        manner.
+
+            OR
+
+        border-width / border-style / border-colour : (top) (right) (bottom) (left) 
+        -->
+
+        <!--Overflow property can be defined in 3 
+        * overflow-x
+        * overflow-y
+        * overflow
+        
+        It has 3 states : scroll auto hidden
+
+        -->
         <!-- Padding and Margin -->
 
         <div class="wrapper">
