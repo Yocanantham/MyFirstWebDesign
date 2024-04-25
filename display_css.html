@@ -153,8 +153,52 @@
                 background-repeat: no-repeat;
             }
 
-             /* Custom list sytle in css */
-             .wrapperD {
+            /* Custom list sytle in css */
+            .wrapperD {
+                font-size: large;
+                border-style: solid;
+                border-color: blue;
+                margin: 0 auto;
+                width: 750px;
+                padding: 15px;
+                margin-bottom: 15px;
+            }
+            .custom-style {
+                list-style-type: none;
+                background: url("achievement.png") no-repeat 0 1px;
+                padding-left: 19px;
+            }
+
+             /* List position */
+             .wrapperF {
+                font-size: large;
+                border-style: solid;
+                border-color: blue;
+                margin: 0 auto;
+                width: 750px;
+                padding: 15px;
+                margin-bottom: 15px;
+             }
+             #inside,#outside {
+                background-color: lightgrey;
+             }
+             .inside,.outside {
+                background-color: lightblue;
+             }
+             .inside {
+                list-style-position: inside;
+             }
+             .outside {
+                list-style-position: outside;
+             }
+
+             /* List style [shorthand property] 
+             
+             list-style : (position) (type) 
+        
+                        # type - either an image or default.
+            */
+             .wrapperG {
                 font-size: large;
                 border-style: solid;
                 border-color: blue;
@@ -162,11 +206,11 @@
                 width: 750px;
                 padding: 15px;
              }
-             #custom-style {
-                list-style-type: none;
+             .inside-decimal {
+                list-style: inside decimal;
              }
-             .custom-style {
-                background: url('custom-style.jpg');
+             .outside-image {
+                list-style: outside url('/achievement.png');
              }
         </style>
     </head>
@@ -179,8 +223,16 @@
             <ul id="display-list">
                 <li class="display-list"><a href="#">Home</a></li>
                 <li class="display-list"><a href="#">About</a></li>
-                <li class="display-list" id="coming-soon-display"><a href="#">Courses</a></li>
-                <li class="display-list" id="coming-soon-visibility"><a href="#">Courses</a></li>
+                <li
+                    class="display-list"
+                    id="coming-soon-display">
+                    <a href="#">Courses</a>
+                </li>
+                <li
+                    class="display-list"
+                    id="coming-soon-visibility">
+                    <a href="#">Courses</a>
+                </li>
                 <li class="display-list"><a href="#">Contact</a></li>
             </ul>
         </div>
@@ -252,10 +304,42 @@
         <!-- Custom list style -->
         <div class="wrapperD">
             <h4>Custom list style in css</h4>
-            <ul id="custom-style">
+            <ul>
                 <li class="custom-style">HTML</li>
                 <li class="custom-style">CSS</li>
                 <li class="custom-style">JavaScript</li>
+            </ul>
+        </div>
+
+        <!-- List position  -->
+        <div class="wrapperF">
+            <h4>List position inside</h4>
+            <ul id="inside">
+                <li class="inside">HTML</li>
+                <li class="inside">CSS</li>
+                <li class="inside">JavaScript</li>
+            </ul>
+            <h4>List position outside</h4>
+            <ul id="outside">
+                <li class="outside">HTML</li>
+                <li class="outside">CSS</li>
+                <li class="outside">JavaScript</li>
+            </ul>
+        </div>
+
+        <!-- List style -->
+        <div class="wrapperG">
+            <h4>List position inside and list style none</h4>
+            <ul id="inside">
+                <li class="inside-decimal inside">CSS</li>
+                <li class="inside-decimal inside">JavaScript</li>
+                <li class="inside-decimal inside">HTML</li>
+            </ul>
+            <h4>List position outside and list style image</h4>
+            <ul id="outside">
+                <li class="outside-image outside">HTML</li>
+                <li class="outside-image outside">CSS</li>
+                <li class="outside-image outside">JavaScript</li>
             </ul>
         </div>
     </body>
