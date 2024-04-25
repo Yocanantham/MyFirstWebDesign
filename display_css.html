@@ -7,11 +7,16 @@
             content="width=device-width, initial-scale=1.0" />
         <title>Display properties</title>
         <style>
-            .wrapper {
+            /* Display and Visibility */
+            .wrapperA {
                 font-size: large;
                 border-style: solid;
                 border-color: red;
                 padding: 1.5rem;
+                margin: 0 auto;
+                min-width: 450px;
+                width: 750px;
+                margin-bottom: 1.5rem;
             }
             a {
                 text-decoration: none;
@@ -19,6 +24,8 @@
             li:hover {
                 background-color: red;
             }
+
+            /* It is used for dispalying thr drop down menu */
             ul {
                 list-style-type: none;
                 background-color: grey;
@@ -29,20 +36,127 @@
                 line-height: 65px;
                 padding: 0 15px;
             }
-            #coming-soon{
+
+            /* Display property rules whether the entire box has to be displayed or not */
+            #coming-soon-display {
                 display: none;
+            }
+
+            /* Visible property rules whether the cotent in the box has to be displayed or not */
+            #coming-soon-visibility {
+                visibility: hidden;
+            }
+
+            /* Box shadows property and Border radius */
+            .wrapperB {
+                background-color: lightgrey;
+                font-size: large;
+                border-style: solid;
+                border-color: red;
+                padding: 1.5rem;
+                margin: 15px auto;
+                min-width: 450px;
+                width: 750px;
+            }
+            .square {
+                height: 85px;
+                width: 85px;
+                border-style: solid;
+                border-color: red;
+                padding: 5px;
+                margin: 65px auto;
+            }
+            #top-left {
+                box-shadow: -15px -15px rgb(0, 0, 0);
+                border-top-left-radius: 15px;
+            }
+            #bottom-right {
+                box-shadow: 15px 15px rgb(0, 0, 0);
+                border-bottom-right-radius: 15px;
+            }
+            /* box-shadow : (a) (b) (c) (d) (e)
+              
+              # a -> x-axis 
+              # b -> y-axis { [-] : for top }
+              # c -> blur
+              # d -> spread
+              # e -> color
+
+
+              boder-radius : (a) (b) (c) (d)
+
+              # a -> top-left
+              # b -> top-right
+              # c -> bottom-right
+              # d -> bottom-left
+
+              */
+            #bottom-right-blur {
+                box-shadow: 15px 15px 15px rgb(0, 0, 0);
+                border-radius: 15px 0;
+            }
+            #bottom-right-blur-spread {
+                box-shadow: 15px 15px 15px 15px rgb(0, 0, 0);
+                border-radius: 0 0 15px 0;
+            }
+            #outer-spread {
+                box-shadow: 0 0 5px 15px rgb(0, 0, 0);
+                border-radius: 15px;
+            }
+            #inset {
+                box-shadow: inset 0 0 15px 5px rgb(0, 0, 0);
             }
         </style>
     </head>
     <body>
-        <div class="wrapper">
-            <h1>Display properties</h1>
+        <!-- Display and Visibility -->
+        <div class="wrapperA">
+            <h1 style="text-align: center">
+                Display and Visibility properties
+            </h1>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
-                <li id="coming-soon"><a href="#" >Courses</a></li>
+                <li id="coming-soon-display"><a href="#">Courses</a></li>
+                <li id="coming-soon-visibility"><a href="#">Courses</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
+        </div>
+        <!-- Box shadows and Border radius -->
+        <div class="wrapperB">
+            <h1 style="text-align: center">Box shadows and Border radius property</h1>
+            <div
+                class="square"
+                id="top-left">
+                Top left
+            </div>
+            <div
+                class="square"
+                id="bottom-right">
+                Bottom right
+            </div>
+            <div
+                class="square"
+                id="bottom-right-blur">
+                Bottom right spread
+            </div>
+            <div
+                class="square"
+                id="bottom-right-blur-spread">
+                Bottom right spread
+            </div>
+            <div
+                class="square"
+                id="outer-spread">
+                Outer spread
+            </div>
+            <div
+                class="square"
+                id="inset"
+                style="text-align: center; padding-top: 9%">
+                Inset
+            </div>
+            <!--inset - means inner glow-->
         </div>
     </body>
 </html>
