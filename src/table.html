@@ -7,6 +7,10 @@
             content="width=device-width, initial-scale=1.0" />
         <title>Table with CSS</title>
         <style>
+            /*CSS hover for navigation*/
+            #welcome:hover {
+                color: red;
+            }
             table {
                 border: 3px solid red;
             }
@@ -32,6 +36,17 @@
         </style>
     </head>
     <body>
+        <!--Code for navigating to the previous page-->
+
+        <div>
+            <h4>
+                <a
+                    id="welcome"
+                    href="index.html"
+                    >&larr; Back to Welcome</a
+                >
+            </h4>
+        </div>
         <div id="wrapper">
             <table>
                 <tr>
