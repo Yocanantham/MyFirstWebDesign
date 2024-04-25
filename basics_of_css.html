@@ -39,7 +39,7 @@
                 color: rgb(135, 80, 207);
             }
 
-            /* Text Decoration & Sample for multiple decoration*/
+            /* Text Decoration & Sample for multiple decoration */
             .wrapperE {
                 font-size: x-large;
                 background-color: lightgrey;
@@ -215,6 +215,22 @@
                 padding: 1rem;
                 min-height: 500px;
             }
+            
+            /* Padding and Margin */
+            .wrapperK{
+                width : 50%;
+                border-style: solid;
+                border-color: rgb(255, 0, 0);
+                margin: 35px auto;
+                padding: 15px;
+            }
+            .padding-margin{
+                border-style: solid;
+                border-color: rgb(17, 0, 255);
+                padding: 15px;
+                margin: 15px auto;
+            }
+            
         </style>
     </head>
     <body>
@@ -492,7 +508,8 @@
 
             OR
 
-        border-width / border-style / border-colour : (top) (right) (bottom) (left) 
+        [Shorthand property] -> border-width / border-style / border-colour : (top) (right) (bottom) (left) 
+        
         -->
 
         <!--Overflow property can be defined in 3 
@@ -503,9 +520,17 @@
         It has 3 states : scroll auto hidden
 
         -->
-        <!-- Padding and Margin -->
+        <!-- Padding and Margin 
+        
+          * [Shorthand property] -> padding : (top) (right) (bottom) (left)  
+        
+          * margin : (15px) (auto) 
+          
+          # auto -> It is used for aligning the content to centre.
+        
+        -->
 
-        <div class="wrapper">
+        <div class="wrapperK">
             <h1 class="padding-margin">CSS in HTML</h1>
             <p class="padding-margin">
                 <span> Lorem </span>ipsum dolor sit amet consectetur adipisicing
