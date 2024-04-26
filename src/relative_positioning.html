@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+        <title>Positioning using CSS</title>
+        <style>
+            /* CSS positioning 
+            
+            # By default the value is set to static position
+
+            # Relative positoin is nothing but the 
+            position of the context wrt to the 
+            container it is initially marked.
+
+            * The order of the position as a stack 
+            follows the pattern of how it is stacked 
+            depends on first come basis method. 
+            
+            
+            
+            */
+            #static {
+                background-color: darkslateblue;
+                /* It is written "first" so it bottom */
+                position: relative;
+                left: 45px;
+                top: 55px;
+
+            }
+            .sample-paragraph {
+                background-color: lightseagreen;
+                /* It is written "second" so it is top of first */
+                position: relative;
+                top: -35px;
+            }
+            .sample-heading {
+                background-color: darkmagenta;
+                /* It is written third so it is top of both first and second */
+                position: relative;
+                left: 55px;
+                top: -95px;
+            }
+            /* Inorder to change the order we need to give the number 
+            in order of which is marked the position attribute in the 
+            first come basis method. 
+            
+            # z-index : (postion number)
+            
+            
+            */
+            #static {
+                z-index: 3 ;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="static">Relative Positioning</h1>
+        <p class="sample-paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+            dolore veritatis impedit? Culpa quos facilis possimus modi quisquam
+            eaque quod reprehenderit, distinctio eum suscipit porro ratione
+            blanditiis ullam? Architecto, minima?
+        </p>
+        <h1 class="sample-heading">Sample</h1>
+        <p class="sample-paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+            cum, magni eos numquam fugiat sed repellendus amet modi ipsum
+            mollitia magnam. Cum, dolores rerum. Pariatur eaque repellendus non
+            nemo voluptatem.
+        </p>
+        <h1 class="sample-heading">Sample</h1>
+        <p class="sample-paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+            cum, magni eos numquam fugiat sed repellendus amet modi ipsum
+            mollitia magnam. Cum, dolores rerum. Pariatur eaque repellendus non
+            nemo voluptatem.
+        </p>
+        <h1 class="sample-heading">Sample</h1>
+        <p class="sample-paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+            cum, magni eos numquam fugiat sed repellendus amet modi ipsum
+            mollitia magnam. Cum, dolores rerum. Pariatur eaque repellendus non
+            nemo voluptatem.
+        </p>
+        <h1 class="sample-heading">Sample</h1>
+        <p class="sample-paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+            assumenda error laboriosam adipisci modi delectus non, beatae quasi
+            harum voluptatum reprehenderit facilis quae. Magni aperiam atque
+            placeat mollitia a, vero modi laborum rerum harum, corporis
+            aspernatur recusandae dolorum! Inventore voluptate aliquam illo
+            nostrum reprehenderit earum officiis sed hic nulla tempora, ullam,
+            perferendis, magni aut. Libero iure repellat animi saepe? Officiis
+            dignissimos deserunt mollitia eos laboriosam neque, voluptates iste
+            labore ab praesentium non aut, perspiciatis dicta delectus error
+            aliquam animi sapiente maiores beatae numquam amet sint quam iure
+            ipsa! Eligendi vel magni ullam repellat neque esse necessitatibus,
+            deleniti cumque, dolorum impedit eum cum corporis nesciunt eaque
+            quod suscipit? Non autem quas expedita. Ex delectus iure quia ipsa
+            quam distinctio, porro totam alias et hic unde quos optio
+            perspiciatis in sunt veniam quo aliquid inventore assumenda
+            aspernatur odit harum officia corrupti! Ad, error, necessitatibus
+            laborum corrupti hic rem ullam tenetur inventore, velit asperiores
+            odio repudiandae nihil maxime ipsum. Blanditiis minima ex mollitia
+            vel quidem consequatur ducimus? Suscipit magnam veritatis sapiente,
+            impedit ratione asperiores amet dolore? Laboriosam blanditiis illo
+            ad deserunt cupiditate debitis eum molestiae ratione ut fugit
+            aperiam saepe asperiores error quis tempora, aspernatur, expedita
+            delectus perferendis labore repellat nam et aliquid dicta hic. Amet
+            perferendis commodi, dignissimos quasi voluptas, vel dolor quibusdam
+            consequatur nam architecto sed iusto repellat velit debitis ea?
+            Commodi sunt doloremque nobis. Maxime, architecto sunt ipsum cum
+            quae at consectetur voluptatem quas incidunt ipsa quis inventore
+            praesentium assumenda aspernatur placeat enim? Quo repellat eligendi
+            nostrum earum incidunt delectus eum natus dolores vel modi omnis,
+            beatae pariatur quas nam repudiandae nobis necessitatibus mollitia
+            perferendis dolorem culpa nisi repellendus? Unde obcaecati odit
+            placeat eius minus perspiciatis modi aperiam esse ipsam earum a
+            corporis ipsum quis molestias, nam magni praesentium necessitatibus
+            vel provident. Sequi, impedit? Veritatis reiciendis error porro
+            quaerat excepturi quia repellat tenetur. Blanditiis accusamus rerum
+            temporibus consequuntur aspernatur dolorum distinctio numquam
+            consequatur? Quibusdam cum ipsa ipsam quia porro ipsum sed
+            aspernatur quam! Ab nam temporibus soluta doloremque ex? Commodi
+            pariatur nemo quasi iure cupiditate, minima reiciendis libero, in,
+            obcaecati consequuntur facilis dolorem aut repellendus. Suscipit,
+            quaerat earum voluptatum asperiores amet, error aperiam voluptates
+            molestias, possimus minus quod. Sapiente, maiores. Eum iste quo
+            voluptates a harum quod facilis, cum sapiente ipsum, culpa
+            asperiores veniam consequuntur odit facere ipsam in temporibus
+            impedit nostrum voluptatibus omnis. Nostrum odit alias voluptate
+            quam tempora nobis quasi amet sapiente magnam quae non, beatae saepe
+            illo quos fugit sunt veritatis itaque hic necessitatibus voluptas
+            iure ut modi earum! Sed ex laudantium praesentium necessitatibus
+            fugiat, ut deserunt molestias, nemo eligendi atque ab vero aliquam
+            animi deleniti voluptatibus. Porro repellat laboriosam eos sit id
+            doloribus earum aspernatur quidem nemo dignissimos saepe tempore
+            eius fugiat quam, repellendus eaque aperiam consequatur quaerat
+            dolorem ipsum molestias recusandae! Voluptatibus pariatur molestias
+            vitae, amet hic fuga ducimus dignissimos! Atque adipisci placeat
+            exercitationem neque vitae incidunt, repudiandae quasi hic ab quia
+            iure mollitia labore dolorem consectetur quas fugit illo autem
+            suscipit doloribus minima harum, minus ratione architecto. Quis
+            repellat commodi est eos natus alias.
+        </p>
+        <h1 class="sample-heading">Sample</h1>
+        <p class="sample-paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+            cum, magni eos numquam fugiat sed repellendus amet modi ipsum
+            mollitia magnam. Cum, dolores rerum. Pariatur eaque repellendus non
+            nemo voluptatem.
+        </p>
+    </body>
+</html>
