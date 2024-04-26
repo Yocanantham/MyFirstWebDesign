@@ -7,11 +7,16 @@
             content="width=device-width, initial-scale=1.0" />
         <title>Table with CSS</title>
         <style>
-            /*CSS hover for navigation*/
+            /* CSS hover for navigation */
             #welcome:hover {
                 color: red;
             }
-            table {
+
+            /* Table using CSS */
+            #wrapperA {
+                margin-bottom: 15px;
+            }
+            .table {
                 border: 3px solid red;
             }
             th,
@@ -33,6 +38,30 @@
                 text-align: center;
                 font-weight: bold;
             }
+
+            /* Border spacing and border collapse 
+            
+            # for border-collapse : seperated is default
+            
+            
+            */
+            #wrapperB {
+                margin-bottom: 15px;
+            }
+            #table-border-spacing {
+                border-spacing: 15px;
+            }
+            #table-border-collapse {
+                border-collapse: collapse;
+            }
+
+            /* Empty cells in CSS */
+            #wrapperC {
+                border: 3px solid blue;
+            }
+            #empty {
+                empty-cells: hide;
+            }
         </style>
     </head>
     <body>
@@ -47,8 +76,9 @@
                 >
             </h4>
         </div>
-        <div id="wrapper">
-            <table>
+        <!-- Table using CSS -->
+        <div id="wrapperA">
+            <table class="table">
                 <tr>
                     <th
                         class="heading"
@@ -144,6 +174,242 @@
                     <td></td>
                     <td></td>
                     <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <!-- Border spacing and border collapse -->
+        <div id="wrapperB">
+            <!--
+                Border spacing using CSS
+            -->
+            <table
+                id="table-border-spacing"
+                class="table">
+                <tr>
+                    <th
+                        class="heading"
+                        rowspan="2">
+                        Day
+                    </th>
+                    <th
+                        class="heading"
+                        colspan="11">
+                        Time
+                    </th>
+                </tr>
+                <tr>
+                    <td class="width">9 - 9.45</td>
+                    <td class="width">9.45 - 10.30</td>
+                    <td
+                        class="width"
+                        rowspan="7"></td>
+                    <td class="width">10.45 - 11.30</td>
+                    <td class="width">11.30 - 12.15</td>
+                    <td
+                        class="width"
+                        rowspan="7"></td>
+                    <td class="width">1.15 - 2.00</td>
+                    <td class="width">2.00 - 2.45</td>
+                    <td
+                        class="width"
+                        rowspan="7"></td>
+                    <td class="width">3.00 - 3.45</td>
+                    <td class="width">3.45 - 4.30</td>
+                </tr>
+                <tr>
+                    <td class="day">Monday</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="day">Tuesday</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="day">Wednesday</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="day">Thursday</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="day">Friday</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="day">Saturday</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <br />
+            <!--
+                Border collapse using CSS
+            -->
+            <table
+                id="table-border-collapse"
+                class="table">
+                <tr>
+                    <th
+                        class="heading"
+                        rowspan="2">
+                        Day
+                    </th>
+                    <th
+                        class="heading"
+                        colspan="11">
+                        Time
+                    </th>
+                </tr>
+                <tr>
+                    <td class="width">9 - 9.45</td>
+                    <td class="width">9.45 - 10.30</td>
+                    <td
+                        class="width"
+                        rowspan="7"></td>
+                    <td class="width">10.45 - 11.30</td>
+                    <td class="width">11.30 - 12.15</td>
+                    <td
+                        class="width"
+                        rowspan="7"></td>
+                    <td class="width">1.15 - 2.00</td>
+                    <td class="width">2.00 - 2.45</td>
+                    <td
+                        class="width"
+                        rowspan="7"></td>
+                    <td class="width">3.00 - 3.45</td>
+                    <td class="width">3.45 - 4.30</td>
+                </tr>
+                <tr>
+                    <td class="day">Monday</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="day">Tuesday</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="day">Wednesday</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="day">Thursday</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="day">Friday</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="day">Saturday</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <!-- Empty cells property in CSS 
+        
+        
+        # default value of empty cells is show.
+        -->
+        <div id="wrapperC">
+            <table id="empty">
+                <tr>
+                    <th>I</th>
+                    <th>II</th>
+                    <th>III</th>
+                </tr>
+                <tr>
+                    <td>IV</td>
+                    <td>V</td>
+                    <td>VI</td>
+                </tr>
+                <tr>
+                    <td>VII</td>
+                    <td>VIII</td>
                     <td></td>
                 </tr>
             </table>
