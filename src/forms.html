@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+        <title>Forms using CSS</title>
+        <style>
+            legend {
+                background-color: lightblue;
+                border-radius: 15px;
+                padding: 15px;
+                margin-left: 65px;
+            }
+            fieldset {
+                margin-bottom: 15px;
+                border-radius: 35px;
+                background-color: lightgrey;
+                box-shadow: 5px -5px 15px 5px lightblue;
+            }
+            label {
+                line-height: 35px;
+                font-size: x-large;
+                font-weight: bolder;
+            }
+            input {
+                margin-bottom: 15px;
+                border-width: 3px;
+                border-radius: 3px;
+                border-color: lightblue;
+            }
+            div {
+                padding-left: 35px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="">
+            <fieldset>
+                <legend>Login details</legend>
+                <div>
+                    <label for="username">Username</label><br />
+                    <input
+                        type="text"
+                        name="username"
+                        id="username" />
+                </div>
+                <div>
+                    <label for="mailid">Email</label><br />
+                    <input
+                        type="email"
+                        name="email"
+                        id="mailid"
+                        placeholder="Type your email" />
+                </div>
+                <div>
+                    <label for="phone">Mobile number</label><br />
+                    <input
+                        type="text"
+                        name="mobile-number"
+                        id="phone" />
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Education</legend>
+                <div>
+                    <label for="degree">Degree</label><br />
+                    <input
+                        type="text"
+                        name="degree"
+                        id="degree" />
+                </div>
+                <div>
+                    <label for="department">Department</label><br />
+                    <input
+                        type="text"
+                        name="department"
+                        id="department" />
+                </div>
+                <div>
+                    <label for="award">Award</label><br />
+                    <input
+                        type="text"
+                        name="award"
+                        id="award" />
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Personal</legend>
+                <div>
+                    <label for="address">Address</label><br />
+                    <input
+                        type="text"
+                        name="address"
+                        id="address" />
+                </div>
+                <div>
+                    <label for="district">District</label><br />
+                    <input
+                        type="text"
+                        name="district"
+                        id="district" />
+                </div>
+                <div>
+                    <label for="pincode">Pincode</label><br />
+                    <input
+                        type="text"
+                        name="pincode"
+                        id="pincode" />
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>
