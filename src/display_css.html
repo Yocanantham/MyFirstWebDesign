@@ -127,7 +127,7 @@
                 margin: 0 auto;
                 width: 35%;
                 height: 350px;
-                background-image: url("sample-background.jpg");
+                background-image: url("../images/sample-background.jpg");
             }
             #repeating-x {
                 border-style: solid;
@@ -135,7 +135,7 @@
                 margin: 0 auto;
                 width: 35%;
                 height: 350px;
-                background-image: url("sample-background-small.jpg");
+                background-image: url("../images/sample-background-small.jpg");
                 background-repeat: repeat-x;
             }
             #repeating-y {
@@ -144,7 +144,7 @@
                 margin: 0 auto;
                 width: 35%;
                 height: 350px;
-                background-image: url("sample-background-small.jpg");
+                background-image: url("../images/sample-background-small.jpg");
                 background-repeat: repeat-y;
             }
             #no-repeating {
@@ -153,10 +153,10 @@
                 margin: 0 auto;
                 width: 35%;
                 height: 350px;
-                background-image: url("sample-background-small.jpg");
+                background-image: url("../images/sample-background-small.jpg");
                 background-repeat: no-repeat;
             }
-
+            
             /* Custom list sytle in css */
             .wrapperD {
                 font-size: large;
@@ -169,12 +169,12 @@
             }
             .custom-style {
                 list-style-type: none;
-                background: url("achievement.png") no-repeat 0 1px;
+                background: url("../images/achievement.png") no-repeat 0 3px;
                 padding-left: 19px;
             }
 
-             /* List position */
-             .wrapperF {
+            /* List position */
+            .wrapperF {
                 font-size: large;
                 border-style: solid;
                 border-color: blue;
@@ -182,40 +182,42 @@
                 width: 750px;
                 padding: 15px;
                 margin-bottom: 15px;
-             }
-             #inside,#outside {
+            }
+            #inside,
+            #outside {
                 background-color: lightgrey;
-             }
-             .inside,.outside {
+            }
+            .inside,
+            .outside {
                 background-color: lightblue;
-             }
-             .inside {
+            }
+            .inside {
                 list-style-position: inside;
-             }
-             .outside {
+            }
+            .outside {
                 list-style-position: outside;
-             }
+            }
 
-             /* List style [shorthand property] 
+            /* List style [shorthand property] 
              
              list-style : (position) (type) 
         
                         # type - either an image or default.
             */
-             .wrapperG {
+            .wrapperG {
                 font-size: large;
                 border-style: solid;
                 border-color: blue;
                 margin: 0 auto;
                 width: 750px;
                 padding: 15px;
-             }
-             .inside-decimal {
+            }
+            .inside-decimal {
                 list-style: inside decimal;
-             }
-             .outside-image {
-                list-style: outside url('/achievement.png');
-             }
+            }
+            .outside-image {
+                list-style: outside url("../images/achievement.png");
+            }
         </style>
     </head>
     <body>
