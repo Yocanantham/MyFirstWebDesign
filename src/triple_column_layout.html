@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+        <title>Triple Column layout with liquid width</title>
+        <style>
+            body {
+                width: 90%;
+                margin: 0 auto;
+                min-width: 960px;
+                font-size: x-large;
+            }
+            #additional {
+                width: 19% ;
+                float: left;
+                padding: 15px;
+                
+            }
+            #main {
+                margin-right: 1%;   
+                float: left;
+                width: 49%;
+                padding: 15px;
+                text-align: justify;
+            }
+            
+            #navigation {
+                padding: 15px;
+                float: right;
+                width: 19%;
+            }
+            #content {
+                background-color: lightgrey;
+            }
+            .clear {
+                clear: both;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <h1>Triple Column layout with liquid width</h1>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Doloribus nam ipsum magnam totam rem ullam ut eveniet, in quo
+                deleniti quia similique molestiae nobis laborum voluptate dicta
+                necessitatibus fugiat architecto.
+            </p>
+        </div>
+        <div id="content">
+            <div id="additional">
+                <h4>Additional</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Voluptate non ad perferendis voluptatum unde alias excepturi
+                    sunt, modi, corporis, commodi facere quibusdam repellat
+                    autem deserunt doloremque pariatur ab debitis culpa.
+                </p>
+            </div>
+            <div id="main">
+                <h4>Content</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laborum et eos fugiat dolorum molestias consequatur facere
+                    hic rerum odio accusantium tempore itaque velit, soluta esse
+                    fugit non sint doloremque quos expedita id. Quos, ipsa quis!
+                    Et, debitis incidunt soluta corrupti amet harum possimus,
+                    distinctio id ducimus enim at, voluptatum rem. Cupiditate
+                    qui atque explicabo at labore fugiat recusandae laudantium,
+                    delectus doloremque sapiente ipsam dicta consequatur odit
+                    facere modi illum totam praesentium voluptatibus est eum
+                    commodi architecto. Ducimus nemo at, natus unde, tempora
+                    tenetur aliquam, iusto quae voluptatibus ipsam voluptatem
+                    minima aliquid ea. Perspiciatis laborum in reiciendis quo
+                    deleniti iure harum.
+                </p>
+            </div>
+            <div id="navigation">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <br class="clear" />
+        </div>
+        <div class="clear">
+            <p>&copy; Copyright</p>
+        </div>
+    </body>
+</html>
