@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+        <title>Selectors in CSS</title>
+        <style>
+            /* Element selector */
+            body {
+                font-size: x-large;
+            }
+
+            /* ID selector */
+            #additional {
+                color: blue;
+            }
+
+            /* Class selector */
+            .heading {
+                color: blueviolet;
+            }
+
+            /* 
+
+             Universal ID selector
+
+
+
+            * {
+                padding: 0;
+                margin: 0;
+            } 
+
+            */
+
+            /* Adjacent siblings style */
+            h4 + p {
+                font-size: x-large;
+                background-color: lightblue;
+            }
+
+            /* General Siblings style */
+            h5 ~ p {
+                font-style: italic;
+            }
+
+            /* Descendent Selector */
+            li a {
+                text-decoration: none;
+            }
+
+            /* Child Selector */
+
+                /* Child of 'navigation' is "li" and child of 'li' is "a" and only that is marked*/
+                #navigation-child > li > a {
+                    color: red;
+                }
+                /* Here the  all descendents of "navigation" is getting marked */
+                #navigation-descendents li > a {
+                    color: red;
+                }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>Selectors in CSS</h1>
+            <h4 class="heading">Main</h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis distinctio eligendi iure est et assumenda. A veniam,
+                dignissimos consequatur veritatis voluptates numquam mollitia
+                quisquam blanditiis. Culpa perspiciatis commodi iusto dolorem?
+            </p>
+            <!-- Here the child selector is marked -->
+            <h4 class="heading">lists in html</h4>
+            <ul id="navigation-child">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <ul>
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                </ul>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Award</a></li>
+            </ul>
+            <!-- Here the descendents selector is marked -->
+            <h4 class="heading">lists in html</h4>
+            <ul id="navigation-descendents">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <ul>
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                </ul>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Award</a></li>
+            </ul>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                vero, excepturi accusamus asperiores debitis officiis ipsa
+                facere dignissimos dicta deserunt eos, suscipit cum perferendis
+                reiciendis iste, architecto impedit nisi. Provident?
+            </p>
+            <h5 class="heading">Additional</h5>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Aperiam recusandae ipsum rem. Quia perferendis eveniet provident
+                ipsum ad sint hic voluptas iure deleniti quod! Iste perferendis
+                numquam aliquam quasi. Dolores!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Mollitia quibusdam deserunt totam suscipit commodi excepturi
+                exercitationem sequi expedita, dolore nam consequuntur quidem
+                architecto est fuga neque qui aut aperiam asperiores!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestias iusto, eum inventore quis rerum dolores natus dolore
+                necessitatibus fuga neque accusamus accusantium vel in voluptate
+                debitis voluptas at, perferendis sequi?
+            </p>
+        </div>
+    </body>
+</html>
