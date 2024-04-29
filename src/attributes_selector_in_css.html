@@ -1,11 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Attributes Selector in CSS</title>
-</head>
-<body>
-    <h1>Attributes Selector in CSS</h1>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+        <title>Attributes Selector in CSS</title>
+        <style>
+            body {
+                font-size: x-large;
+            }
+
+            /* Basic Attribute Selector */
+            [title] {
+                color: crimson;
+            }
+
+            /* For targeting the value of the attribute */
+            a[target="_blank"] {
+                color: blueviolet;
+                text-decoration: none;
+            }
+
+            /* For targeting the starting value of an attribute */
+            a[href^="https"] {
+                color: red;
+            }
+
+            /* For targeting a substring which is not a individual sentence */
+            img[alt*="icon"] {
+                display: inline-block;
+                border: 3px solid blue;
+                padding: 5px;    
+            }
+
+            /* For targeting a substring which is a individual sentence*/
+            img[alt~="icon"] {
+                display: inline-block;
+                border: 3px solid crimson;
+                padding: 5px;    
+            }
+
+            /* For targrting the end of a string */
+            a[href$=".docx"] {
+                font-size: 5rem;
+                font-style: italic;
+            }
+            a[href$=".pdf"] {
+                font-size: 1.5rem;
+                text-decoration: none;
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Attributes Selector in CSS</h1>
+        <p>
+            <abbr title="Indian Space Research Organization">ISRO</abbr> and
+            <abbr title="Professor">Prof.</abbr> are abbreviations known.
+        </p>
+        <p>
+            <a href="https://www.google.com/" target="_self">Google</a> ,
+            <a href="https://maps.google.com/" target="_self">Maps</a> ,
+            <a href="https://www.youtube.com/" target="_self">Youtube</a> and
+            <a href="http://drive.google.com/" target="_blank">Drive</a> are products of Google
+        </p>
+        <p>
+            Icons are example for attribute selectors.
+            <img
+                src="../icons/achievement.png"
+                alt="icon-achievement" />
+            ,
+            <img
+                src="../icons/check-mark.png"
+                alt="icon-check-mark" />
+            and
+            <img
+                src="../icons/right-arrow.png"
+                alt="icon-right-arrow" />
+        </p>
+        <p>
+            Icons are example for attribute selectors.
+            <img
+                src="../icons/achievement.png"
+                alt="icon achievement" />
+            ,
+            <img
+                src="../icons/check-mark.png"
+                alt="icon check-mark" />
+            and
+            <img
+                src="../icons/right-arrow.png"
+                alt="icon right-arrow" />
+        </p>
+        <p>
+            Document type identifying using a CSS attribute selector and the
+            sample are pdf <a href="../documents/sample.docx">Sample</a> and
+            <a href="../documents/sample.pdf">Sample</a>
+        </p>
+
+    </body>
 </html>
