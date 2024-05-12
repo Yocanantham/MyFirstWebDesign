@@ -1,3 +1,4 @@
 {
-    "workbench.editor.enablePreview": true
+    "workbench.editor.enablePreview": true,
+    "livePreview.defaultPreviewPath": "/src/forms.html"
 }
