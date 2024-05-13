@@ -31,10 +31,67 @@
                 gap: 1rem;
                 justify-content: center;
                 align-items: center;
-                flex-flow: column wrap;
+                /* flex-direction: row;
+                flex-wrap: wrap; */
+                flex-flow: row wrap;
             }
         </style>
     </head>
+
+    <!-- Flexbox properties
+
+        # flex-direction : 
+            It is used for determining the flow of the flex (By default it is set to be row)
+                * row
+                * row-reverse
+                * column
+                * column-reverse
+
+        # justify-content : 
+            It is used for aligning the items in a main axis.
+                * baseline
+                * flex-start
+                * flex-end
+                * space-around
+                * space-between
+                * space-evenly
+
+        # align-items : 
+            It is used for aligning the items in a main axis.
+                * baseline
+                * flex-start
+                * flex-end
+                * space-around
+                * space-between
+                * space-evenly
+              ! * stretch : It is used only in the auxilary axis 
+
+        # flex-wrap : 
+            It is used for wrapping
+                * nowrap
+                * wrap
+                * wrap-reverse
+        
+        #  align-content : 
+            It is different than the align-items as it is meant for the containers here.
+            ! It is available only if the wrap property is set to " wrap ".
+
+        # gap : 
+            It is used for maintaining the gaps between them.
+        
+        ? These are meant for the individuals here.    
+        # flex-grow : ...,-1,0,-1...     -> It is used for increasing the size based on the remaining space available.
+        # flex-shrink : ...,-1,0,-1...   -> It is used for decreasing the size based on the remaining space available.
+        # flex-basis : ...,-1,0,-1...    -> It is used for increasing the size of the particular element.
+
+        -> shorthand property
+        # flex : (a) (b) (c)             -> It is a shorthand property for (flex-grow) (flex-shrink) (flex-basis).
+
+        -> align-self : It is used for making the items to be individual aligned.
+        !# order : It is used to override the ordering it is displayed in the webpage.
+
+    -->
+
     <body>
         <section class="main-container">
             <div class="container">1</div>

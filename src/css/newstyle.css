@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* ! Styles for the main heading*/
+
+
+h1 {
+    padding: 3rem;
+    font-size: 3rem;
+    background-color: lightskyblue;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* ! Styles for the entire flex */
+main {
+    margin-top: 13.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+
+/* ! Styles for navigation */
+
+/* ? List style */
+li a {
+    display: block;
+    max-width: 19vw;
+}
+li {
+    list-style-type: none;
+    background-color: lightgray;
+    padding: 1rem;
+    border: 1px solid white;
+}
+a{
+    text-decoration: none;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+
+li a:visited, li a{
+    color: black;
+}
+li a:hover,li:hover{
+ background: lightseagreen;
+}   
+/* ? Flex style */
+.navigation {
+    background-color: #333;
+    padding: 0.5rem;
+    display: flex;
+    min-height: 150vh;
+    width: 24vw;
+}
+
+iframe {
+    height: 150vh;
+    width: 71vw;
+}
+.webpage {
+    
+    display: flex;
+    flex-basis: 1;
+}
