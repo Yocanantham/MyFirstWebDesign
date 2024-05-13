@@ -12,8 +12,8 @@ body {
 
 
 h1 {
-    padding: 3rem;
-    font-size: 3rem;
+    font-size: 5rem;
+    padding: 1em;
     background-color: lightskyblue;
     display: flex;
     justify-content: center;
@@ -25,7 +25,7 @@ h1 {
 
 /* ! Styles for the entire flex */
 main {
-    margin-top: 13.5rem;
+    margin-top: 19rem;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -70,6 +70,9 @@ li a:hover,li:hover{
 iframe {
     height: 150vh;
     width: 71vw;
+    border-radius: 1rem;
+    box-shadow: 5px -5px 3.5px 5px grey;
+    
 }
 .webpage {
     
