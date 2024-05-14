@@ -1,0 +1,76 @@
+body {
+    margin-top: 0;
+    min-width: 50vw;
+    min-height: 100vh;
+    display: grid;
+    /* Used for structuring the grid elements lika a matrix. */
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd"
+    "mn mn mn mn mn mn mn sb"
+    "ft ft ft ft ft ft ft ft";
+    gap: 0.5rem;
+}
+
+header {
+    /* Used for naming the grid template areas in a grid. */
+    margin: 0;
+    grid-area: hd;
+    display: grid;
+    place-content: center;
+    background-color: grey;
+    text-align: center;
+    
+}
+
+ul, dd ,dt {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    
+}
+
+li a {
+    text-decoration: none;
+    display: block;
+    border: 1px solid black;
+    padding: 0.5rem;
+    background-color: lightgrey;
+}
+
+li a:link, li a:visited {
+    color: black;
+}
+
+li a:hover, li a:focus {    
+    background-color: lightseagreen;
+}
+
+aside, dl, aside div {
+    grid-area: sb;
+    padding: 0;
+    margin: 0.5rem 0.5rem 0 0.5rem;
+    background-color: lightskyblue;
+    min-width: 24%;
+}
+
+main {
+    min-width: 100%;
+    min-height: 100%;
+    grid-area: mn;
+    overflow: hidden;
+}
+
+iframe {
+    min-width: inherit;
+    min-height: inherit;
+    border-radius: 3px;
+    border-radius: 15px;
+    border-color: darkblue;
+}
+
+footer {
+    display: grid;
+    place-content: center;
+    grid-area: ft;
+    background-color: blueviolet;
+}
