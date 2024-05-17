@@ -13,8 +13,8 @@ body {
 
 header {
     /* Used for naming the grid template areas in a grid. */
-    margin: 0;
     grid-area: hd;
+    margin: 0;
     display: grid;
     place-content: center;
     background-color: grey;

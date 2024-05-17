@@ -10,13 +10,17 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    min-width: 650px;
     height: 100vh;
 }
 
 header {
-    background-color: blue;
+    background-color: green;
+    text-transform: uppercase;
+    color: white;
+    font-size: x-large;
     width: 100%;
-    height: 14vh;
+    height: 14%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,50 +29,72 @@ header {
 /* It has both main and aside element */
 section {
     width: 100%;
-    height: 77vh;
+    height: 77%;
     display: flex;
     justify-content: center;
+    align-items: stretch;
+    gap: 1.5%;
 }
 
 main {
     background-color: grey;
+    min-width: 81.5%;
+}
+iframe {
+    min-width: 100%;
+    height: 100%;
+}
+/* main {
+    background-color: grey;
     min-width: 81%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .flexitems {
-    width: 100px;
-    height: 100px;
+    min-width: 150px;
+    min-height: 150px;
     background-color: black;
     color: white;
     padding: 0.5rem;
     margin: 1rem;
-}
+} */
 
 aside {
-    background-color: blueviolet;
-    min-width: 19%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: lightgrey;
+    min-width: 16.5%;
+    order: -1;
 }
 .navigation {
+    min-width: 16.5%;
+    display: block;
     text-decoration: none;
     color: black;
+    padding: 1rem;
+    font-size: x-large;
 }
 .sidebar {
-    width: 100%;
+    min-width: 16.5%;
     list-style-type: none;
-    padding: 1rem;
     border: 1px solid white;
+    text-align: center;
+}
+.navigation:hover {
+    background: lightblue;
+    color: black;
+}
+.navigation:focus {
+    background-color: darkslategray;
+    color: white;
 }
 
 footer {
     background-color: lightseagreen;
     width: 100%;
-    height: 9vh;
+    height: 9%;
     display: flex;
     justify-content: center;
     align-items: center;
