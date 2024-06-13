@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.light {
+    display: flex;
+    flex-flow: column;
+}
+img {
+    display: block;
+    padding: 3.5rem;
+}
+input {
+    margin: 1rem;
+}
+h1 {
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+input {
+    padding: 1rem;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 55px;
+    background-color: grey;
+    border: 1px solid black;
+}

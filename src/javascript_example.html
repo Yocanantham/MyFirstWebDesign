@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/javascript_style.css" />
+
+        <!-- # Script is added to the html by the following
+         
+        -> type attribute isnt necessary since "js" is the default scripting for "HTML".
+        ? "src" ->  It is used for linking the JS file.
+    
+    -->
+
+        <script type="text/javascript" src="js/function.js"></script>
+
+        <title>Javascript</title>
+    </head>
+    <body>
+        <!-- Turning on off the light using js -->
+        <div class="light">
+            <h1>Turning ON (or) OFF using JS</h1>
+            <img
+                id="image"
+                src="../images/light OFF.png"
+                alt="Bulb"
+                title="Bulb OFF" />
+            <input
+                type="button"
+                onclick="turnOffLight()"
+                value="Turn OFF Light" />
+            <input
+                type="button"
+                onclick="turnOnLight()"
+                value="Turn ON Light" />
+        </div>
+    </body>
+</html>

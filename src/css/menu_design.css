@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 3rem;
+}
+h1 {
+    font-size: 5rem;
+    padding: 3rem;
+}
+.menu > ul{
+    position: relative;
+}
+.menu > ul > li {
+   
+    font-size: 3rem;
+    list-style-type: none;
+    
+    background-color: grey;
+    margin: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+p {
+    padding: 1.5rem;
+}
+.dropdown_A, .dropdown_B, .dropdown_C {
+    display: none;
+    position: absolute;
+    background-color: lightblue;
+    width: 150px;
+}
+.dropdown_A ul >li, .dropdown_B ul >li, .dropdown_C ul >li {
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 1.9rem;
+    text-align: center;
+    border: 1px solid white;
+}
+a {
+    text-decoration: inherit;
+    width: 100%;
+    display: inline-block;
+    padding: 1rem 0rem;
+    color: black;
+    transition:  font-weight 0.1s ease, letter-spacing 0.3s ease, background-color 1s ease;
+}
+a:hover {
+    background-color: black;
+    color: white;
+    letter-spacing: 5px;
+    font-weight: 600; 
+}
+
+.menu ul>li:hover .dropdown_A,
+.menu ul>li:hover .dropdown_B,
+.menu ul>li:hover .dropdown_C {
+    display: block;
+    z-index: 1;
+}
+
+
