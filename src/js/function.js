@@ -1,5 +1,5 @@
 function turnOnLight() {
-    document.getElementById("image").src = "../../images/Light ON.png";
+    document.getElementById("image").src = "../../images/Light-ON.png";
     document.getElementById("image").title = "Bulb ON";
     document.body.style.backgroundColor = "#FFF";
     document.getElementsByTagName("h1")[0].style.color = "#000";
@@ -8,7 +8,7 @@ function turnOnLight() {
     
 }
 function turnOffLight() {
-    document.getElementById("image").src = "../../images/light OFF.png";
+    document.getElementById("image").src = "../../images/light-OFF.png";
     document.getElementById("image").title = "Bulb OFF";
     document.body.style.backgroundColor = "#000";
     document.getElementsByTagName("h1")[0].style.color = "#FFF";
